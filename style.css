@@ -180,7 +180,7 @@
 
             .catalog_block {
                 display: flex;
-                justify-content: center;
+                justify-content: flex-start;
                 align-items: center;
                 flex-direction: column;
                 gap: 20px;
@@ -276,8 +276,7 @@
             line-height: 27px;
             text-align: left;
             color: #2ABE80;
-
-
+            text-decoration: none;
         }
     }
 
@@ -440,20 +439,7 @@
             align-items: center;
             gap: 52px;
 
-            .left,
-            .right {
-                display: flex;
-                justify-content: center;
-                align-items: center;
-                gap: 6px;
 
-                .unsubscribe_text {
-                    font-family: "ArialRegular";
-                    font-size: 14px;
-                    line-height: 16.41px;
-                    color: #A3A3A3;
-                }
-            }
         }
     }
 
