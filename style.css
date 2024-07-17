@@ -33,6 +33,7 @@
 
 
     .banner {
+
         display: flex;
         flex-direction: column;
         justify-content: flex-start;
@@ -40,6 +41,12 @@
         position: relative;
         width: 100%;
 
+        .banner_image {
+            background-image: url('./images/banner.png');
+            background-size: cover;
+            width: 600px;
+            height: 725px;
+        }
 
         .banner_content {
             position: absolute;
@@ -307,4 +314,147 @@
             }
         }
     }
+}
+
+@media screen and (max-width: 728px) {
+    .page {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        background: #FFFFFF;
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 42px;
+        box-shadow: 0px 2px 24px 0px #8A806A33;
+
+
+        .banner {
+            width: 100%;
+
+            .banner_image {
+                background-image: url('./images/banner_small.png');
+                background-size: cover;
+                width: 100%;
+            }
+
+            .banner_content {
+                .banner_text {
+                    width: 90%;
+                }
+
+                .banner_discount-block {
+                    .banner_discount-content {
+                        .banner_discount-logo {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .main {
+            .main_text {
+                width: 90%;
+                font-family: "ArialRegular";
+                font-size: 18px;
+                line-height: 28px;
+                margin-bottom: 100px;
+
+                .main_text-links {
+                    color: #476FC6;
+                }
+
+                .main_text-bold {
+                    font-family: "ArialBold";
+                    font-size: 18px;
+                    line-height: 28px;
+                }
+            }
+
+            .main_catalog {
+                gap: 10px;
+                margin-top: 100px;
+                width: 90%;
+                grid-template-columns: 1fr 1fr;
+                justify-items: center;
+            }
+
+            .description {
+
+                width: 90%;
+                font-family: 'ArialRegular';
+                font-weight: 200;
+                font-style: normal;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                color: #C4C4C4;
+            }
+        }
+
+        .banner_submit-button,
+        .shop-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 30px;
+            cursor: pointer;
+            background: #2ABE80;
+            border: 0px;
+            border-radius: 30px;
+            font-family: "ArialBold";
+            font-style: normal;
+            font-weight: 400;
+            font-size: 20px;
+            line-height: 23.44px;
+            text-align: center;
+            color: #FFFFFF;
+            padding: 19px 46px 18px 46px;
+            transition: 0.7ms;
+        }
+
+        .banner_submit-button:hover,
+        .shop-button:hover {
+            background: #FF5953;
+        }
+    }
+
+    .footer {
+        .contacts {
+            gap: 0px;
+            width: 90%;
+            flex-direction: column;
+        }
+
+        .footer_descriptions {
+            width: 90%;
+            text-align: center;
+        }
+
+        .unsubscribe_section {
+            width: 250px;
+            margin-top: 25px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 52px;
+
+            .left,
+            .right {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 6px;
+
+                .unsubscribe_text {
+                    font-family: "ArialRegular";
+                    font-size: 14px;
+                    line-height: 16.41px;
+                    color: #A3A3A3;
+                }
+            }
+        }
+    }
+
 }
