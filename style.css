@@ -1,0 +1,310 @@
+@font-face {
+    font-family: "ArialBold";
+    src: url('./fonts/Arial/ArialBold/ArialBold.ttf');
+}
+
+@font-face {
+    font-family: "ArialRegular";
+    src: url('./fonts/Arial/ArialRegular/ArialRegular.ttf');
+}
+
+@font-face {
+    font-family: "ArialItalic";
+    src: url('./fonts/Arial/ArialItalic/ArialItalic.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.page {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: #FFFFFF;
+    width: 600px;
+    margin: 0 auto;
+    margin-top: 42px;
+    box-shadow: 0px 2px 24px 0px #8A806A33;
+
+
+    .banner {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        position: relative;
+        width: 100%;
+
+
+        .banner_content {
+            position: absolute;
+            margin-top: 17px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            .banner_logos {
+                display: flex;
+                gap: 36px;
+                justify-content: center;
+                align-items: center;
+            }
+
+            .banner_text {
+                width: 306px;
+                height: 164px;
+                margin-top: 41px;
+                font-family: 'Circe Extra';
+                font-weight: 800;
+                font-style: normal;
+                font-size: 42px;
+                line-height: 44px;
+                text-align: center;
+                color: #000000;
+            }
+
+            .banner_discount-block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+
+                .banner_discount-content {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .banner_discount-logo {
+                        margin-bottom: 10px;
+                    }
+
+                    .banner_discount-percent {
+                        font-family: 'Circe Extra';
+                        font-weight: 800;
+                        font-style: normal;
+                        font-size: 40px;
+                        line-height: 46.88px;
+                        text-align: center;
+                        color: #2E2E2E;
+                    }
+
+                    .banner_discount-time {
+                        font-family: "ArialBold";
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 14px;
+                        line-height: 16.41px;
+                        text-align: center;
+                        color: #2E2E2E;
+
+                    }
+                }
+            }
+
+            .banner_promo-block {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-top: 30px;
+
+                .banner_promo-block-text {
+                    font-family: "ArialRegular";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 14px;
+                    line-height: 16.41px;
+                    color: #2E2E2E;
+                }
+
+                .banner_promo-block-title {
+                    font-family: "ArialBold";
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 28px;
+                    line-height: 32.2px;
+                    text-align: center;
+                    margin-top: 19px;
+                }
+            }
+
+
+        }
+    }
+
+    .main {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 54px;
+
+        .main_text {
+            width: 500px;
+            height: 334px;
+            font-family: "ArialRegular";
+            font-size: 18px;
+            line-height: 28px;
+
+            .main_text-links {
+                color: #476FC6;
+            }
+
+            .main_text-bold {
+                font-family: "ArialBold";
+                font-size: 18px;
+                line-height: 28px;
+            }
+        }
+
+        .main_catalog {
+            margin-top: 40px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            width: 500px;
+            justify-items: start;
+
+
+            .catalog_block {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+                gap: 20px;
+                height: 191px;
+                margin-bottom: 11px;
+
+                .catalog_block-text {
+                    font-family: "ArialBold";
+                    font-size: 16px;
+                    line-height: 24px;
+                    text-align: center;
+                    color: #476FC6;
+                    ;
+                }
+            }
+        }
+
+        .description {
+            margin-top: 68px;
+            margin-bottom: 30px;
+            width: 450px;
+            font-family: 'ArialRegular';
+            font-weight: 200;
+            font-style: normal;
+            font-size: 14px;
+            line-height: 20px;
+            text-align: center;
+            color: #C4C4C4;
+        }
+    }
+
+    .banner_submit-button,
+    .shop-button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 30px;
+        cursor: pointer;
+        background: #2ABE80;
+        border: 0px;
+        border-radius: 30px;
+        font-family: "ArialBold";
+        font-style: normal;
+        font-weight: 400;
+        font-size: 20px;
+        line-height: 23.44px;
+        text-align: center;
+        color: #FFFFFF;
+        padding: 19px 46px 18px 46px;
+        transition: 0.7ms;
+    }
+
+    .banner_submit-button:hover,
+    .shop-button:hover {
+        background: #FF5953;
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 28px;
+
+    .contacts {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 61px;
+        width: 450px;
+
+        .social-medias {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .icon-logo {
+                color: #2ABE80;
+                width: 40px;
+                height: 40px;
+                cursor: pointer;
+            }
+
+        }
+
+        .phone {
+            display: flex;
+            align-items: flex-start;
+            font-family: "ArialRegular";
+            font-size: 17px;
+            line-height: 27px;
+            text-align: left;
+            color: #2ABE80;
+
+
+        }
+    }
+
+    .footer_descriptions {
+        width: 542px;
+        font-family: "ArialRegular";
+        font-size: 14px;
+        line-height: 16.41px;
+        color: #A3A3A3;
+        margin-top: 29px;
+    }
+
+    .unsubscribe_section {
+        width: 250px;
+        margin-top: 25px;
+        margin-bottom: 25px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 52px;
+
+        .left,
+        .right {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 6px;
+
+            .unsubscribe_text {
+                font-family: "ArialRegular";
+                font-size: 14px;
+                line-height: 16.41px;
+                color: #A3A3A3;
+            }
+        }
+    }
+}
