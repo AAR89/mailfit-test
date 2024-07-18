@@ -49,8 +49,6 @@ a[x-apple-data-detectors] {
         width: 100%;
 
         .banner_image-big {
-            /* background-image: url('./images/banner.png');
-            background-size: cover; */
             width: 600px;
             height: 725px;
             display: flex;
