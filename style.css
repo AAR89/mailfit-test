@@ -350,10 +350,9 @@ a[x-apple-data-detectors] {
                 width: 100%;
             }
 
-            .banner_content {
-                .banner_text {
-                    width: 90%;
-                }
+            .banner_text {
+                width: 90%;
+
 
                 .banner_discount-block {
                     .banner_discount-content {
@@ -433,6 +432,15 @@ a[x-apple-data-detectors] {
             align-items: center;
             gap: 52px;
 
+
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .banner {
+        .banner_content {
+            margin-top: 0px !important;
 
         }
     }
