@@ -53,7 +53,7 @@ a[x-apple-data-detectors] {
             background-size: cover; */
             width: 600px;
             height: 725px;
-            display: block;
+            display: flex;
         }
 
         .banner_image-small {
