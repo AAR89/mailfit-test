@@ -347,7 +347,7 @@ a[x-apple-data-detectors] {
 
             .banner_image-small {
                 display: flex;
-                background-size: cover;
+                width: 100%;
             }
 
             .banner_content {
